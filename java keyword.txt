@@ -1,0 +1,38 @@
+A Java keyword is a reserved word that has a special meaning in the Java programming language.
+Examples of java keywords include:
+1. int – Used to declare a variable that stores whole numbers. 
+2. double – Used to declare a variable that stores decimal numbers. 
+3. char – Used to store a single character. 
+4.  boolean – Used to store a true or false value. 
+5. public – Makes a class, method, or variable accessible from anywhere in the program.
+6. private – Restricts access to a class member so it can only be used within the same class.
+7. protected – Allows access within the same package and by subclasses. 
+8.  class – Used to define a class. 
+9. new – Used to create an object from a class. 
+10. this – Refers to the current object of a class. 
+11. super – Refers to the parent class. 
+12. if – Executes a block of code when a specified condition is true. 
+13. else – Executes a block of code when the if condition is false. 
+14. switch – Selects one block of code from multiple options. 
+15. for – Repeats a block of code a specified number of times. 
+16.  while – Repeats a block of code while a condition remains true. 
+17.  do – Executes a block of code at least once before checking the condition. 
+18. break – Terminates a loop or switch statement immediately. 
+19. continue – Skips the current iteration of a loop and moves to the next one. 
+20. return – Ends a method and optionally returns a value. 
+21. try – Defines a block of code that may generate an exception. 
+22.  catch – Handles an exception that occurs in a try block. 
+23. finally – Contains code that always executes after a try or catch block. 
+24. throw – Explicitly generates an exception. 
+25.  throws – Declares exceptions that a method may generate. 
+26. extends – Allows one class to inherit properties and methods from another class. 
+27. implements – Allows a class to implement an interface. 
+28. interface – Defines a contract that classes can implement. 
+29. abstract – Declares a class or method that must be completed by a subclass. 
+30. static – Makes a member belong to the class rather than to individual objects. 
+31. final – Prevents modification, inheritance, or overriding. 
+32. void – Indicates that a method does not return a value. 
+33. null – Represents an empty or non-existent object reference. 
+34. package – Groups related classes and interfaces together. 
+35. import – Allows the use of classes and packages from other libraries. 
+36. instanceof – Checks whether an object belongs to a specific class or interface.
