@@ -1,0 +1,188 @@
+Chapter 1
+Self-Review Exercises 1.1
+ Fill in the blanks in each of the following statements:
+a) Computers process data under the control of sets of instructions called
+programs. 
+b) The key logical units of the computer are the central processing unit and memory. 
+c) The three types of languages they are machine , assembly and high-level. 
+d) The programs that translate high-level language programs into machine language are called compilers . 
+e) Android is an operating system for mobile devices based on the Linux kernel and Java. 
+f) Open-source software is generally feature complete, (supposedly) bug free and ready for use by the community. 
+g) The Wii Remote, as well as many smartphones, use a(n) sensor which allows the device to respond to motion. 
+
+1.2 Fill in the blanks in each of the following sentences about the Java environment:
+ a) The java command from the JDK executes a Java application. 
+b) The javac command from the JDK compiles a Java program. 
+c) A Java source code file must end with the .java file extension. 
+d) When a Java program is compiled, the file produced by the compiler ends with the .class file extension. 
+e) The file produced by the Java compiler contains bytecode that are executed by the Java Virtual Machine. 
+
+1.3 Fill in the blanks in each of the following statements 
+
+a) Objects enable the design practice of encapsulation —although they may know how to communicate with one another across well-defined interfaces, they normally are not allowed to know how other objects are implemented. 
+b) Java programmers concentrate on creating classes , which contain fields and the set of methods that manipulate those fields and provide services to clients. 
+c) The process of analyzing and designing a system from an object-oriented point of view is called object-oriented analysis and design. 
+d) A new class of objects can be created conveniently by inheritance—the new class (called the subclass) starts with the characteristics of an existing class (called the superclass), possibly customizing them and adding unique characteristics of its own. 
+e) UML(Unified Modeling Language) is a graphical language that allows people who design software systems to use an industry-standard notation to represent them. 
+f) The size, shape, color and weight of an object are considered attributes of the object’s class.
+
+Exercises 1.4 Fill in the blanks in each of the following statements: 
+a) The logical unit that receives information from outside the computer for use by the computer is the input unit. 
+b) The process of instructing the computer to solve a problem is called processing.
+c) Assembly language is a type of computer language that uses English-like abbreviations for machine-language instructions. 
+d) Output unit is a logical unit that sends information which has already been processed by the computer to various devices so that it may be used outside the computer. 
+e) Registers and memory are logical units of the computer that retain information. 
+f) Arithmetic Logic Unit(ALU) is a logical unit of the computer that performs calculations. 
+g) Control Unit is a logical unit of the computer that makes logical decisions. 
+h) High-Level languages are most convenient to the programmer for writing programs quickly and easily. 
+i) The only language a computer can directly understand is that computer’s machine language. 
+j) Control Unit is a logical unit of the computer that coordinates the activities of all the other logical units. 
+
+1.5 Fill in the blanks in each of the following statements: 
+a) The java programming language is now used to develop large-scale enterprise applications, to enhance the functionality of web servers, to provide applications for consumer devices and for many other purposes. 
+b) C programming language initially became widely known as the development language of the UNIX operating system. 
+c) The TCP/IP protocol ensures that messages, consisting of sequentially numbered pieces called bytes, were properly routed from sender to receiver, arrived intact and were assembled in the correct order. 
+d) The C++ programming language was developed by Bjarne Stroustrup in the early 1980s at Bell Laboratories. 
+1.6 Fill in the blanks in each of the following statements: 
+a) Java programs normally go through five phases— edit, compile, load, verify and execute. 
+b) A(n) Intregrated Development Environment (IDE) provides many tools that support the software development process, such as editors for writing and editing programs, debuggers for locating logic errors in programs, and many other features. 
+c) The command java invokes the Java Virtual Machine (JVM), which executes Java programs. 
+d) A(n) Java Virtual Machine (JVM) is a software application that simulates a computer, but hides the underlying operating system and hardware from the programs that interact with it.
+ e) The class loader takes the .class files containing the program’s bytecodes and transfers them to primary memory. f) The examines bytecodes to ensure that they’re valid.
+f) The byte code verifier examines bytecodes to ensure that they’re valid.
+
+1.7 Explain the two compilation phases of Java programs. 
+ANS: Phase 1: Compilation to bytecode
+- The Java compiler javac takes your .java source code and compiles it into platform-independent bytecode.
+- This produces .class files. Bytecode isn’t machine code for your CPU. It’s an intermediate code for the Java Virtual Machine.
+- At this stage syntax is checked, types are verified, and optimizations may be done.
+Phase 2: Interpretation/JIT compilation to native code
+- The JVM loads the .class bytecode and executes it. 
+- Initially the JVM interprets bytecode line by line. For code that runs often, the JIT (Just-In-Time) compiler converts hot bytecode into native machine code for your CPU.
+- This is why Java is "write once, run anywhere". Same bytecode runs on Windows, Mac, Linux as long as there’s a JVM.
+
+1.8 One of the world’s most common objects is a wrist watch. Discuss how each of the following terms and concepts applies to the notion of a watch: object, attributes, behaviors, class, inheritance (consider, for example, an alarm clock), modeling, messages, encapsulation, interface and information hiding.
+ANS: Using a wrist watch to explain core OOP terms:
+
+Object: A specific, real instance. Your actual Casio G-Shock on your wrist right now is an object. It exists in memory with its own state.
+
+Class: The blueprint for making watches. The Watch class defines what all watches have and do. Your G-Shock and my Apple Watch are both objects created from the Watch class.
+
+Attributes: Data that describes the object’s state. For a watch: time = 11:05 AM, color = black, brand = "Casio", is Waterproof = true, alarm time = 7:00 AM.
+
+Behaviors: Things the watch can do. Methods like display time(), set alarm(), start stopwatch(), beep().
+
+Inheritance: Building specialized watches from general ones. “Alarm Clock Watch” inherits from Watch. It gets all basic watch behavior for free, then adds snooze() and alarm ring(). Both digital watch and analog watch could inherit from Watch.
+
+Modeling: Creating a simplified software version of a real watch. We don’t model every gear and spring. We only model attributes and behaviors that matter to our program.
+
+Messages: Objects talk by sending messages. You press a button = sending a set time (11, 05) message to the watch object. The watch responds by changing its state.
+
+Encapsulation: The watch hides its internal complexity. You don’t need to know about quartz crystals or gears to use it. The internal battery level and circuit logic are private. You only access it through public buttons/methods.
+
+Interface: The contract of what you can do. The watch interface promises show time (), set alarm(time), toggle24HourMode (). Smart watch might implement Watch interface plus touch screen interface.
+
+Information hiding: A part of encapsulation. The watch hides how it keeps time internally. 
+
+
+Making a Difference
+1.9 (Test-Drive: Carbon Footprint Calculator) 
+Some scientists believe that carbon emissions, especially from the burning of fossil fuels, contribute significantly to global warming and that this can be combatted if individuals take steps to limit their use of carbon-based fuels. Organizations and individuals are increasingly concerned about their “carbon footprints.” Websites such as TerraPass http://www.terrapass.com/carbon-footprint-calculator/ and Carbon Footprint http://www.carbonfootprint.com/calculator.aspx provide carbon-footprint calculators. Test-drive these calculators to determine your carbon footprint. Exercises in later chapters will ask you to program your own carbon-footprint calculator. To prepare for this, use the web to research the formulas for calculating carbon footprints.
+ANS: Common formulas by category:
+
+
+- Electricity: $CO_2\ emissions = kWh\ used \times Grid\ emission\ factor$
+  Grid factor varies by location. US average ? 0.385 kg CO?/kWh.
+
+- Car travel: $CO_2\ emissions = Miles\ driven \div MPG \times CO_2\ per\ gallon$
+  Gasoline =8.89 kg CO?/gallon. Diesel = 22.4 lb/gallon.
+
+- Flights: $CO_2\ emissions = Distance\ in\ miles \times Emission\ factor\ per\ mile$
+  Short haul <300mi: ?0.251 kg CO?/passenger-mile. Long haul >2300mi: ?0.195 kg/passenger-mile. Add 1.9x multiplier for radiative forcing.
+
+- Natural gas heating:  $CO_2\ emissions = Therms\ used \times 11.7\ lb\ CO_2/therm$
+
+- Diet: $CO_2\ emissions = kg\ of\ food \times Emission\ factor\ per\ kg$
+  Beef ?60 kg CO?/kg, chicken ?6 kg CO?/kg, vegetables ?2 kg CO?/kg.
+Total: Add all categories, then convert to metric tons: $Total\ CO_2\ (kg) \div 1000$ 
+
+1.10 (Test-Drive: Body Mass Index Calculator) 
+Obesity causes significant increases in illnesses such as diabetes and heart disease. To determine whether a person is overweight or obese, you can use a measure called the body mass index (BMI). The United States Department of Health and Human Services provides a BMI calculator at http://www.nhlbi.nih.gov/guidelines/obesity/BMI/ bmicalc.htm. Use it to calculate your own BMI. A forthcoming exercise will ask you to program your own BMI calculator. To prepare for this, use the web to research the formulas for calculating BMI. 
+ANS: Core BMI formulas:
+- Metric: BMI = \frac{weight\ in\ kg}{(height\ in\ m)^2}
+- Imperial: BMI = \frac{weight\ in\ lb}{(height\ in\ in)^2} \times 703
+Standard BMI categories from NIH/WHO:
+Category	BMI Range
+Underweight	< 18.5
+Normal weight	18.5 - 24.9
+Overweight	25.0 - 29.9
+Obese	30.0+
+Example: 
+If you weigh 70 kg and are 1.75 m tall: 
+BMI = \frac{70}{1.75^2} = \frac{70}{3.0625} = 22.9. That's "Normal weight". 
+1.11 (Attributes of Hybrid Vehicles) 
+Hybrid vehicles are becoming increasingly popular, because they often get much better mileage than purely gasoline-powered vehicles. Browse the web and study the features of four or five of today’s popular hybrid cars, then list as many of their hybrid-related attributes as you can. Some common attributes include city-miles-per-gallon and highway-miles-per-gallon. Also list the attributes of the batteries (type, weight, etc.). 
+ANS: 
+ 1. 2026 Toyota Prius - Most efficient hybrid car
+- Type: HEV - Hybrid Electric Vehicle, no plug-in
+- MPG: 57 combined, 49 city / 50 highway for FWD LE
+- Powertrain: 2.0L 4-cyl + electric motors, 150 HP
+- Battery: Lithium ion (Li-ion)
+- Drivetrain: Front-wheel drive or AWD available
+- Other: Curb weight 3097 lbs.
+ 2. 2026 Honda CR-V Hybrid
+- Type: HEV - Full hybrid 
+- MPG: 40 city / 34 highway / 37 combined
+- Powertrain: 2.0L inline-4 + 2 motors, 204 HP, 247 lb-ft torque
+- Drivetrain: Front-wheel drive or all-wheel drive
+- Efficiency: 37-40 MPG combined
+- Range: 518-560 miles.
+3. 2026 Toyota RAV4 Hybrid - Hybrid-only for 2026
+- Type: HEV - Full hybrid, all trims now hybrid
+- MPG: Up to 44 combined for FWD, 42 combined for AWD
+- Powertrain: 2.5L inline-4 + 2 or 3 motors, 226-236 HP
+- MPG: 47 city / 40 highway / 43 combined
+- Other: Fifth-generation Toyota Hybrid System with more energy-dense lithium-ion battery.
+4. 2026 Jeep Cherokee Hybrid 
+- Type: Conventional hybrid, first for Jeep
+- MPG: 39 city / 35 highway / 37 combined
+- Powertrain: 1.6L turbo 4-cyl + hybrid system, 210 HP, 230 lb-ft torque
+- System: Uses Japanese BluENexus hybrid powertrain from Aisin/Denso
+- Other: European Prince engine design, assembled in Michigan.
+5. 2025 Hyundai Sonata Hybrid
+- Type: HEV - Full hybrid
+- Powertrain: 150 HP @ 6000 RPM, 139 lb-ft torque
+- Battery Type: Lead acid battery
+- Battery Capacity: 1.6 kWh
+- Drivetrain: Front-wheel drive
+- Transmission: 6-speed automatic
+ Common Hybrid-Related Attributes to List:
+- City/Highway/Combined MPG: Most important metric, varies 35-57 combined
+- Battery Type: Lithium-ion most common, some still use lead acid
+- Battery Capacity: 1.6 kWh in Sonata Hybrid
+- Electric Motor Power: CR-V has 2 motors, RAV4 has 2-3 motors
+- System Type: HEV vs PHEV vs MHEV - all above are HEV except where noted
+- Drivetrain: FWD standard, AWD available on most
+- Regenerative Braking: Standard on HEVs to recharge battery
+- Transmission: CVT or 6-speed auto common
+- Total System Horsepower: 150-236 HP.
+
+1.12 (Gender Neutrality) 
+Many people want to eliminate sexism in all forms of communication. You’ve been asked to create a program that can process a paragraph of text and replace gender-specific words with gender-neutral ones. Assuming that you’ve been given a list of gender-specific words and their gender-neutral replacements (e.g., replace both “wife” and “husband” with “spouse,” “man” and “woman” with “person,” “daughter” and “son” with “child”), explain the procedure you’d use to read through a paragraph of text and manually perform these replacements. How might your procedure generate a strange term like “woperchild?” You’ll soon learn that a more formal term for “procedure” is “algorithm,” and that an algorithm specifies the steps to be performed and the order in which to perform them. We’ll show how to develop algorithms then convert them to Java programs which can be run on computers.
+ANS : Procedure / Algorithm: Given a list of gender-specific words and their neutral replacements:
+1. Input: Take the paragraph of text and the dictionary of replacements. Example: {"man": "person", "woman": "person", "son": "child", "daughter": "child"}
+2. Tokenize: Split the paragraph into individual words. Handle punctuation separately so "woman." becomes ["woman", "."].
+3. Scan each word: For each word in the paragraph:
+   - Convert to lowercase for comparison, but preserve original case
+   - Check if the word matches any key in your replacement list
+   - If match found, replace it with the gender-neutral term
+   - If no match, keep the original word.
+4. Rebuild: Join the words back into a paragraph with proper spacing and punctuation
+5.. Output: Return the modified paragraph
+
+How you might get "woperchild"
+This bug happens if your algorithm does a naive substring replacement instead of whole-word replacement.
+Example: 
+Original text: "The woman ran to her son."  
+Replacement list: {"man": "person", "son": "child"}
+
